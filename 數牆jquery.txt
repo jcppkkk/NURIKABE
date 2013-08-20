@@ -1,0 +1,43 @@
+window.open("http://www.kanpen.net/nurikabe.html?problem="+$("table.option2_table tr").size()+'/'+$("table.option2_table tr:first td").size()+'/'+$("table.option2_table").clone().find("img").replaceWith(".").end().find("div").append('_').end().find("tr td:last-child div").append('/').end().find("div").text(),,)
+
+Quz=$("table.option2_table")
+$('<a />', {
+    'href': "http://www.kanpen.net/nurikabe.html?problem="+Quz.find("tr").size()+'/'+Quz.find("tr:first td").size()+'/'+Quz.clone().find("img").replaceWith(".").end().find("div").append('_').end().find("tr td:last-child div").append('/').end().find("div").text(),
+    'target': '_blank',
+    'text': 'KANPEN'
+           }).prependTo('body form').wrap("<div style='LEFT:750px; TOP:8px;POSITION: absolute;'></div>")
+
+		   
+Quz=$("table.option2_table");
+win=window.open("http://www.kanpen.net/nurikabe.html?problem="+Quz.find("tr").size()+'/'+Quz.find("tr:first td").size()+'/'+Quz.clone().find("img").replaceWith(".").end().find("div").append('_').end().find("tr td:last-child div").append('/').end().find("div").text(),"","");
+
+
+
+$(document).ready(function() {
+	$("iframe").remove();
+	Quz=$("table.option2_table");
+	URL="http://www.kanpen.net/nurikabe.html?problem="+Quz.find("tr").size()+'/'+Quz.find("tr:first td").size()+'/'+Quz.clone().find("img").replaceWith(".").end().find("div").append('_').end().find("tr td:last-child div").append('/').end().find("div").text();
+    $("body").append("<iframe src='"+URL+"'></iframe>");
+});
+
+
+
+$(document).ready(function() {
+	Quz=$("table.option2_table");
+	URL="http://www.kanpen.net/nurikabe.html?problem="+Quz.find("tr").size()+'/'+Quz.find("tr:first td").size()+'/'+Quz.clone().find("img").replaceWith(".").end().find("div").append('_').end().find("tr td:last-child div").append('/').end().find("div").text();
+    alert(URL);
+});
+
+
+
+
+$(document).ready(function() {
+	Quz=$("table.option2_table");
+	URL="http://www.kanpen.net/nurikabe.html?problem="+Quz.find("tr").size()+'/'+Quz.find("tr:first td").size()+'/'+Quz.clone().find("img").replaceWith(".").end().find("div").append('_').end().find("tr td:last-child div").append('/').end().find("div").text();
+    window.open('http://ppt.cc/gen.php\?r=1&t=1&s='+encodeURIComponent(URL),"","");
+});
+
+Quz=$("table.option2_table");
+prob=$('<param name="search" value="?problem=14/24/._._._._3_._._._._._._._._2_._._._._._._._._._1_/._._5_._._._3_._3_._._._._._._._._9_._._._._._._/._._._._._._._._._4_._._2_._._._._._._._._._._._/3_._._._._._._._._._._._._._._._._._._6_._._._._/._._._._._._._._6_._5_._._._._._._._._._4_._._._/._._._5_._._._._._._._._._2_._._._._._._._._._._/._3_._._._._._3_._._._._._._._._3_._5_._._._._._/._._._._._._._._._._._._._._._._._._._._._._._4_/._4_._._6_._._._._._._._._._._._._._._6_._._._._/._._._._._._._._._3_._._5_._._._._._._._._._._._/._._._._._._._._._._4_._._._6_._._3_._._._6_._._/._._._._3_._._._._._._._._._._._._._._._._._._4_/._._1_._._._._._._._._._._._._._._._._._1_._._._/4_._._._._._._._._5_._._._._2_._._1_._._._._._2_/">');
+app=$('<applet codebase="jar" archive="http://www.kanpen.net/jar/pencilbox.jar, http://www.kanpen.net/jar/nurikabe.jar" code="pencilbox.nurikabe.Main.class" name="kanpen" width="1" height="1" alt="an applet">');
+app.append(prob).appendTo("body")
